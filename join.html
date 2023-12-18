@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>FITWORLD Subscription</title>
+<meta charset="UTF-8">
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<link rel="stylesheet" href="join.css">
+<script>
+function onSubmit(token) {
+document.getElementById("displayform").submit();
+}
+</script>
+</head>
+<body style="background-color: #000;">
+<h1 style=" color: #fff;"><span style="color: red;">S</span>ubscription to our <span style="color: red;">F</span>itworld</h1>
+<p style=" color: #fff;">There is no one who loves pain, who seeks after it, wants to have it simply because it is pain.</p>
+
+<div class="container">
+    
+    <form action="https://web.inxmail.com/[organisation]/subscription/servletv2" method="post" id="displayform">
+        <input type="hidden" name="INXMAIL_SUBSCRIPTION" value="[list name]"/>
+        <input type="hidden" name="INXMAIL_HTTP_REDIRECT" value="[URL for landing page "Success"]"/>
+        <input type="hidden" name="INXMAIL_HTTP_REDIRECT_ERROR" value="[URL for landing page "Error"]"/>
+        <input type="hidden" name="INXMAIL_CHARSET" value="UTF-8"/>
+<label>Email*:
+    <input type="text" name="email">
+</label><br/>
+<label >Obeisance:
+    <select name="Obeisance">
+        <option value="male">Mr</option>
+        <option value="female">Ms</option>
+        <option value="neutral">Divers</option>
+    </select>
+</label>
+<label>First name:
+    <input type="text" name="First name">
+</label>
+<label>Last name:
+    <input type="text" name="Last name">
+</label><br/>
+<label>
+    <input type="checkbox" name="INXMAIL_TRACKINGPERMISSION">
+Yes, I agree to subscription  and i accept all the terms and conditions.<br>
+</label>
+<button class="g-recaptcha" data-sitekey="6Ld673sUAAAAANIr4kvsqp3F1i4iiOatKNVWVCL2" data-callback='onSubmit'>Subscribe</button>
+
+</form>
+</div>
+</body>
+</html>

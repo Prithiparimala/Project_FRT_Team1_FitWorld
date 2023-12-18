@@ -1,0 +1,747 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import "bootstrap/style.css/bootstrap";
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    color: #fff;
+    scroll-behavior: smooth;
+    
+}
+/*-------------------Style navbar------------*/
+.navbar{
+    display: flex;
+    position: fixed;
+
+    background-color: transparent;
+    justify-content: space-between;
+    z-index: 2222;
+    transition: 0.5s ease;
+}
+.navbar{
+    width: 100%;
+    background-color: grey;
+}
+.navbar .sticky{
+    padding: 6px 60px;
+    background: #0c1518;
+    box-sizing: 0 0 15px rgba(0,0,0,0.5);
+}
+.navbar .sticky .logo{
+    font-size: 2em;
+    color: red;
+}
+.navbar .sticky .logo B{
+    color: #fff;
+}
+.logo{
+    font-size: 2.8em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.logo {
+    color: #fff !important;
+}
+.logo b{
+    color: red !important
+}
+ol{
+    display: flex;
+    margin: auto 0;
+}
+ol li{
+    list-style: none;
+    margin-right: 20px;
+}
+ol li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+ol li:hover a{
+    color: red !important;
+}
+/*-----------------------common size for all section ---------------*/
+.view{
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+}
+
+/*-------------------------style home section --------------------*/
+.home{
+    display: flex;
+    min-height: 120vh;
+    align-items: center;
+    justify-content: center;
+    clip-path: (0 0,100% 0,100% 100%,80% 95%,0 100%);
+}
+.tagline{
+    font-size: medium;
+    color: #fff;
+}
+.banner{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url(banner.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(60%);
+}
+.highlights{
+    width: 80%;
+    position: relative;
+    display: inline-block;
+    z-index: 11;
+}
+.highlights h3{
+    color: #fff;
+    display: inline;
+    font-size: 2vw;
+    padding: 5px 20px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    border-left: 6px solid red !important;
+}
+.highlights h1{
+    font-size: 9vw;
+    text-align: center;
+    font-weight: normal;
+}
+.highlights b{
+    color: #fff !important;
+    font-weight: 800;
+    font-weight: sans-serif;
+}
+.highlights h1 {
+    color: red !important;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+.highlights .tagline{
+    color: #d7d7d7;
+    font-size: 1.2vw;
+    text-align: center;
+    font-weight: normal;
+}
+.highlights .join{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 800;
+    padding: 5px 20px;
+    font-size: 1.5vw;
+    margin-top: 1.2em;
+    color: red !important;
+    border: 2px solid red !important;
+    border-radius: 50px;
+    background: transparent;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+.highlights .join:hover{
+    color: red;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    background: red !important;
+}
+
+
+/*---------------------------------common style for all section -----------------------*/
+.main{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.main h2{
+    font-size: 2.5vw;
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+    display: inline-block;
+}
+span{
+    color: red !important;
+}
+.main h2::before{
+    position: absolute;
+    content: '';
+    background: red !important;
+    height: 3px;
+    width: 30%;
+    right: -15px;
+    bottom: 0;
+    border-radius: 50px;
+}
+.main h6{
+    margin-top: 10px;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+.content{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 0 30px;
+    justify-content: center;
+}
+/*--------------------------------style about section--------------------*/
+.about .content .cols{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px 80px;
+}
+.about .content .cols p b{
+    font-size: 30px;
+    margin-right: 5px;
+}
+.about .content .cols a{
+    position: relative;
+    top: 20;
+    color: #fff;
+    background: red !important;
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.about .content .cols a:hover{
+    color: black;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    background: #fff !important;
+}
+.about .content .cols .box{
+    position: relative;
+    height: 550px;
+    width: 650px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+.about .content .cols .box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/*--------------------------- style workout section ----------------*/
+.workout .content{
+    flex-wrap: wrap;
+}
+.workout .content .frame{
+    position: relative;
+    width: 350px;
+    padding: 20px;
+    margin: 10px;
+    background: lightseagreen;
+    box-shadow: 0px 15px 20px rgb(0,0,0,0.5);
+}
+.workout .content .frame .box{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+.workout .content .frame .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: 0.2s ease-in;
+}
+.workout .content .frame .box:hover img{
+    filter: brightness(100%);
+    transform: scale(1.08);
+}
+.workout .content .frame .tittle{
+    color: red;
+    padding: 5px 0;
+}
+.workout .content .frame .p{
+    font-size: 0.8em;
+}
+/*----------------------------style trainers section--------------------*/
+
+.trainers .content{
+    flex-wrap: wrap;
+}
+.trainers .content .frame{
+    position: relative;
+    width: 350px;
+    padding: 30px 30px 40px 30px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+    margin: 10px;
+    background: #222;
+}
+.trainers .content .frame .box{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+}
+.trainers .content .frame .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: 0.2s ease-in;
+}
+.trainers .content .frame .box:hover img{
+    filter: grayscale(0);
+    transform: scale(1.08);
+}
+.trainers .content .frame .headline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+}
+.trainers .content .frame .headline i{
+    height: 22px;
+    width: 22px;
+    border: 1.5px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    margin-right: 5px;
+    cursor: pointer;
+    line-height: 22px;
+}
+.trainers .content .frame .headline i:hover{
+    border: 0.5px solid red;
+    background: red;
+}
+.trainers .content .frame .headline .title{
+    color: red !important;
+    font-size: 1.2em;
+}
+.trainers .content .frame p{
+    font-size: 0.8em;
+    position: relative;
+    bottom: 5px;
+}
+.trainers .content .frame a{
+    top: 20px;
+    color: red;
+    background: transparent;
+    padding: 5px 20px;
+    border: 1.5px solid red;
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+.trainers .content .frame a:hover{
+    color: #fff;
+    background: red;
+}
+
+/*----------------------------style diet section-------------------*/
+
+.diet .content{
+    flex-direction: column;
+}
+.diet .content .row{
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+}
+.diet .content .row:nth-child(odd) .a{
+    order: 2;
+}
+.diet .content .row .cols{
+    position: relative;
+    width: 600px;
+    padding: 20px 50px;
+}
+.diet .content .row .cols .headline{
+    font-size: 2em;
+    color: #fff;
+}
+.diet .content .row .cols a .headline .span{
+    color: red !important;
+
+}
+.diet .content .row .cols b .headline .span{
+    color: red !important;
+}
+.diet .content .row .cols .boxes{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+}
+.diet .content .row .cols .boxes .img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+p{
+    text-align: justify;
+}
+
+/* Reset some default styles for consistency */
+body, h1, h2, h3, p, ul, li, form, input, select {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* Timetable section */
+#timetable {
+    background-color: #000;
+    padding: 30px 0;
+}    
+    
+.view {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+.timetable .main h2 {
+    color: #fff;
+}
+
+.timetable .main h5 {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.tab-class {
+    text-align: center;
+}
+
+.nav-pills {
+    text-align: center;
+}
+
+.nav-pills .nav-item {
+    margin-right: 10px;
+}
+
+/* Class timetable table */
+.table {
+    background-color: red;
+    color: black;
+    text-align: center;
+    border-color: black;
+}
+
+/* BMI section */
+.main h1 span {
+    color: #000;
+}
+
+/* Calculate BMI form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-control-lg {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: black;
+    color: #fff;
+}
+
+.custom-select-lg {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: red;
+    color: #fff;
+}
+
+.btn-dark {
+    background-color: red;
+    color: #fff;
+}
+
+
+
+/*----------------------style contact section---------------*/
+
+.contact .content{
+    min-height: 100vh;
+}
+.contact .content form{
+    margin: auto 0;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.contact .content form input{
+    color: #222;
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    font-size: 18px;
+    border: 1px solid #878787;
+    border-radius: 4px;
+    margin: 15px 0;
+    background: transparent;
+}
+.contact .content form textarea{
+    width: 100%;
+    padding: 10px;
+    color: #222;
+    font-size: 18px;
+    border: 1px solid #878787;
+    border-radius: 4px;
+    margin: 15px 0;
+    background: transparent;
+}
+.contact .content form input:focus,
+.contact .content form textarea:focus{
+    border: 2px solid red;
+    transition: 0.1s ease;
+}
+.contact .content form .btn{
+    letter-spacing: 1px;
+    width: 100px;
+    display: inline-block;
+    color: red;
+    border-color: red;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.contact .content form .btn:hover{
+    background: red;
+    color: #fff;
+}
+.contact .content .bgimg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(bgimg);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(80%);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+
+.box {
+    padding: 20px;
+}
+
+h1 {
+    color: red;
+}
+
+
+.icons a:hover {
+    color: red;
+}
+/*-------------------------------------- style copyright area ------------------------*/
+.copyright{
+    text-transform: capitalize;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    background: #222;
+    text-align: center;
+    font-size: 18px;
+}
+.copyright a{
+    color: red;
+    text-decoration: none;
+    margin: 0 2px;
+    font-weight: lighter;
+}
+/*--------------------------table section -------------------------------*/
+td{
+    vertical-align: top;
+}
+/*-------------------------------------- make responsive ----------------------*/
+
+@media screen and (max-width: 900px){
+    .navbar{
+        padding: 0 60px;
+    }
+    .navbar ol{
+        display: none;
+    }
+    .navbar ol.active{
+        top: 60px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        background: #222;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: calc(100%-60px);
+    }
+    .navbar ol.active li{
+        margin: 8px;
+    }
+    .navbar ol.active li a{
+        font-size: 25px;
+    }
+    .navbar .toggle{
+        height: 25px;
+        width: 25px;
+        margin: auto 0;
+        cursor: pointer;
+        background: url(menubar.jpg);
+        background-size: cover;
+        background-position: center;
+        filter: invert(1);
+        background-repeat: no-repeat;
+    }
+    .navbar .toggle .active{
+        background: url(close);
+        background-size: 40px;
+        background-position: center;
+        cursor: pointer;
+        filter: invert(1);
+    }
+    .highlights h3{
+        font-size: 3vw;
+        padding: 5px 10px;
+        border-left: 3px solid red;
+    }
+    .highlights h1{
+        font-size: 16vw;
+    }
+    .highlights .join{
+        font-size: 1.8vw;
+        border: 1px solid red;
+    }
+    .main h2{
+        font-size: 1.5rem;
+    }
+    .main h6{
+        font-size: 10px;
+    }
+    .about .content{
+        flex-direction: column;
+    }
+    .workout .content .frame{
+        width: 260px;
+        padding: 18px;
+    }
+    .trainers .content .frame{
+            width: 350px;
+            padding: 15px 15px 40px 15px;
+            margin: 10px 5px;
+    }
+    .trainers .content .frame .box{
+        height: 200px;
+    }
+    .trainers .content .frame a{
+        border: 1.5px solid red;
+        padding: 3px 15px;
+    }
+    .diet .content .row{
+        flex-direction: column;
+    }
+    .diet .content .row .cols{
+        width: 100%;
+    }
+    .diet .content .row:nth-child(odd) .a{
+        order: 0;
+    }
+    .diet .content .row .cols .heading{
+        font-size: 1.5em;
+    }
+    .diet .content .row .cols p{
+        font-size: 13px;
+    }
+    .diet .content .row .cols.boxes{
+        width: 90%;
+        margin: auto;
+    }
+    @media (max-width: 768px) {
+        table tr td {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    
+        table tr td .icons,
+        table tr td .box {
+            margin-top: 10px;
+        }
+    
+        table tr:last-child .icons {
+            margin-top: 20px;
+        }
+    }
+    @media (max-width: 768px) {
+        .contact {
+            flex-direction: column;
+        }
+    
+        .main {
+            order: 2; /* Move .main below .content in the source order */
+        }
+    
+        form {
+            width: 80%;
+        }
+    }
+    @media (max-width: 768px) {
+        .table-responsive {
+            overflow-x: auto;
+        }
+    
+        .nav-pills {
+            flex-wrap: wrap;
+        }
+    
+        .nav-pills .nav-item {
+            margin-right: 0;
+            margin-bottom: 5px;
+        }
+    
+        .form-control-lg,
+        .custom-select-lg,
+        .btn-dark {
+            margin-bottom: 15px;
+        }
+    }
+
+}
