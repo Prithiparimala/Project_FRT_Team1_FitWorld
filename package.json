@@ -1,0 +1,24 @@
+{
+  "name": "fitworld",
+  "version": "1.0.0",
+  "description": "future ready talent project fitworld",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev":"nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prithiparimala/Project_FRT_Team1_FitWorld.git"
+  },
+  "author": "SHANMUGAM BCA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prithiparimala/Project_FRT_Team1_FitWorld/issues"
+  },
+  "homepage": "https://github.com/Prithiparimala/Project_FRT_Team1_FitWorld#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
