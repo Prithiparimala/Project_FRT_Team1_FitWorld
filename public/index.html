@@ -23,6 +23,7 @@
 <li><a href="#diet" onclick="navToggle();">diet</a></li>
 <li><a href="#timetable" onclick="navToggle();">Timetable</a></li>
 <li><a href="#contact" onclick="navToggle();">contact</a></li>
+<li><a href="#chat" onclick="navToggle();">chat</a></li>
 </ol> 
 </div>
 <!--------------------------Home section----------------------------->
@@ -329,43 +330,25 @@ Finally, make sure you’re getting enough sleep. Sleep is when your body repair
 </section>
 <!---------------------------------------------timetable section----------------------------->
 <section id="timetable" class="timetable view">
-<div class="main">
-<h2><span>C</span>lass<span> T</span>imetable</h2>
+<div class="container">
+<h2><span style="color: red;">C</span>lass<span style="color: red;"> T</span>imetable</h2>
 <h5>Working Hours and Class Time</h5>
 </div>
-<div class="tab-class" style="text-align: center;">
-      <ul class="nav nav-pills justify-content-center mb-4" style="text-align: center;">
-        <li class="nav-item">
-          <a class="nav-link active" data-toggle="pill" href="#class-all" style="color: red;">All Classes</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="pill" href="#class-cardio">Cardio</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" data-toggle="pill" href="#class-crossfit">Crossfit</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" data-toggle="pill" href="#class-powerlifting">Powerlifting</a>
-            </li>
-      </ul>
-    </div>
     <div class="tab-content" style="text-align: center;">
       <div id="class-all" class="container tab-pane p-0 active" style="text-align: center;">
         <div class="table-responsive" style="text-align: center;">
-          <table class="table table-bordered table-lg m-0" border="1"
-                 cellpadding="20px"
-                 style="padding: 1em; background-color: red; text-align: center; border-color:white;"
+          <table class="table table-bordered table-lg m-0" border="1" cellpadding="20px"style="padding: 1em; background-color: red; text-align: center; border-color:white;"
                  width="45%">
                  <thead class="bg-secondary text-white text-center">
                   <tr>
-                  <th style="color: #000;">Time</th>
-                  <th style="color: #000;">Monday</th>
-                  <th style="color: #000;">Tuesday</th>
-                  <th style="color: #000;">Wednesday</th>
-                  <th style="color: #000;">Thursday</th>
-                  <th style="color: #000;">Friday</th>
-                  <th style="color: #000;">Saturday</th>
-                  <th style="color: #000;">Sunday</th>
+                  <th style="color: red;">Time</th>
+                  <th style="color: red;">Monday</th>
+                  <th style="color: red;">Tuesday</th>
+                  <th style="color: red;">Wednesday</th>
+                  <th style="color: red;">Thursday</th>
+                  <th style="color: red;">Friday</th>
+                  <th style="color: red;">Saturday</th>
+                  <th style="color: red;">Sunday</th>
                   </tr>
                   </thead>
                   <tbody class="text-center">
@@ -414,48 +397,6 @@ Finally, make sure you’re getting enough sleep. Sleep is when your body repair
         </div>
       </div>
     </div>
-
-<div class="main">
-<h1><span>B</span>ody <span>M</span>ass <span>I</span>ndex </h1>
-<h4>Whate is BMI?</h4>
-<p style="text-align: center;">There is no one who loves pain, who seeks after it, wants to have it simply because it is pain.</p>
-</div>
-</div>
-<div class="main" style="background-color: aqua;">
-<h1 style="color: #000;">Calculate your BMI</h1>
-<form>
-<div class="form-row">
-<div class="col form-group">
-<input type="text"
-      class="form-control form-control-lg bg-dark text-white" placeholder="Weight (KG)"/>
-</div>
-<div class="col form-group">
-<input type="text"
-      class="form-control form-control-lg bg-dark text-white" placeholder="Height (CM)"/>
-</div>
-</div>
-<div class="form-row">
-<div class="col form-group">
-<input type="text"
-      class="form-control form-control-lg bg-dark text-black" placeholder="Age"/>
-</div>
-<div class="col form-group">
-<select class="custom-select custom-select-lg bg-dark text-muted" style="color: #000;">
-<option style="color: #000;">Gender</option>
-<option style="color: #000;">Male</option>
-<option style="color: #000;">Female</option>
-</select>
-</div>
-</div>
-<div class="form-row">
-<div class="col" style="color: red;">
-<input type="button"
-      class="btn btn-lg btn-block btn-dark border-light"
-      style="color: #000;" value="Calculate Now"/>
-</div>
-</div>
-</form>
-</div>
 </section>
 <!------------------------------------Contact section--------------------------->
 <section id="contact" class="contact view">
@@ -474,59 +415,28 @@ Finally, make sure you’re getting enough sleep. Sleep is when your body repair
 <div class="bgimg"></div>
 </div>
 </section>
-<!----------table section starts----------->
-<table style="width: 100%;">
-<tr><td vertical-align="top"><h1 style="color: red;">About</h1></td>
-      <tr><td vertical-align="top">
-<p>There is no one who loves pain, who seeks after it, <br/>wants to have it simply because it is pain.</p>
-<div class="icons">
-<a href="#"></a>
-<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-</svg></a>
-<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15"/>
-</svg></a>
-<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-</svg></a>     
-<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
-<path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
-</svg></a>  
-</div>
-<div class="col-lg-3 col-md-6 mb-5">
-<h4 style="color: red;">Opening Hours</h4>
-<h5 class="text-white">Monday - Friday</h5>
-<p>8.00 AM - 8.00 PM</p>
-<h5 class="text-white">Saturday - Sunday</h5>
-<p>2.00 PM - 8.00 PM</p>
-</div>
-</td>
-<td vertical-align="top">
-      <h1 style="color: red;">Contact info</h1>
-<div class="icons">
-<a href="#"><span>Address:</span> 13a Rto Street,<br/>Thiruvanmuyar,<br/> chennai=600125</a><br/>
-<a href="#"><span>Phone no:</span> +91 8939564756</a><br/>
-<a href="#"><span>Email Id:</span> thalapathyvijay@gmail.com</a>
-</div>
-</td>
-  
-  <td vertical-align="top">
-      <div class="box">
-          <h1>Quick Links</h1>
-          <div class="icons">
-              <a href="#">Home</a><br/>
-              <a href="#">About</a><br/>
-              <a href="#">Workout</a><br/>
-              <a href="#">Trainer</a><br/>
-              <a href="#">Diet</a><br/>
-              <a href="#">Timetable</a><br/>
-              <a href="#">Contact</a><br/>
-          </div>
+<!---------footer section starts----------->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h1 style="color: red;">About</h1>
+        <ul>
+          <h4><p>We are best trainers and we make sure you have satisified our training. we are providing training for beginners also so definitely oru gym can helpfull for your's weight-loss and gain.</p></h4>
+        </ul>
       </div>
-  </td>
-</tr>
-</table>
+      <div class="footer-col">
+        <h1 style="color: red;">Contact us</h1>
+        <ul>
+          <h3><span>A</span>ddress:</h3><h5>33a peeliamman kovil street,<br/> Rto Thiruvanmuyar,<br/> chennai-600129</h5>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+</footer>
 <!------------------------------------- copyright --------------------------->
 <section class="copyright">
 &copy; copyright <a href="#">HipHopCoding</a>2023 | All Right Reserved

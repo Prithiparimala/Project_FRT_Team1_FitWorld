@@ -14,7 +14,6 @@
 .navbar{
     display: flex;
     position: fixed;
-
     background-color: transparent;
     justify-content: space-between;
     z-index: 2222;
@@ -249,13 +248,14 @@ span{
 .workout .content .frame .box{
     position: relative;
     height: 300px;
-    width: 100%;
+    width: 93%;
     overflow: hidden;
+    text-align: justify;
 }
 .workout .content .frame .box img{
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: 93%;
     object-fit: cover;
     filter: brightness(80%);
     transition: 0.2s ease-in;
@@ -278,7 +278,7 @@ span{
 }
 .trainers .content .frame{
     position: relative;
-    width: 350px;
+    width: 400px;
     padding: 30px 30px 40px 30px;
     box-shadow: 0 10px 15px rgba(0,0,0,0.5);
     margin: 10px;
@@ -286,8 +286,8 @@ span{
 }
 .trainers .content .frame .box{
     position: relative;
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 320px;
     overflow: hidden;
 }
 .trainers .content .frame .box img{
@@ -398,92 +398,86 @@ p{
     text-align: justify;
 }
 
-/* Reset some default styles for consistency */
-body, h1, h2, h3, p, ul, li, form, input, select {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-}
-
-
-/* Timetable section */
+/* General styles for the timetable section */
 #timetable {
     background-color: #000;
-    padding: 30px 0;
-}    
-    
-.view {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-.timetable .main h2 {
+    padding: 100px 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h2 span {
+    color: red;
+    font-size: 2.5vw;
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+}
+h5{
     color: #fff;
 }
 
-.timetable .main h5 {
-    color: #fff;
-    margin-top: 10px;
-}
-
+/* Styles for the tab navigation */
 .tab-class {
-    text-align: center;
+    margin-bottom: 20px;
 }
 
-.nav-pills {
-    text-align: center;
+.nav-pills .nav-link {
+    color: lightgreen;
 }
 
-.nav-pills .nav-item {
-    margin-right: 10px;
+.nav-pills .nav-link.active {
+    background-color: lightsalmon;
+    color: #fff;
 }
 
-/* Class timetable table */
-.table {
-    background-color: red;
-    color: black;
-    text-align: center;
-    border-color: black;
+/* Styles for the timetable table */
+.table-responsive {
+    margin-top: 20px;
+    overflow-x: auto; /* Allow horizontal scrolling */
 }
 
-/* BMI section */
-.main h1 span {
-    color: #000;
-}
-
-/* Calculate BMI form */
-form {
-    max-width: 600px;
+.table-lg {
     margin: 0 auto;
 }
 
-.form-row {
-    margin-bottom: 15px;
+.table th, .table td {
+    background-color: lightseagreen;
 }
 
-.form-control-lg {
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: black;
-    color: #fff;
+.box {
+    padding: 20px;
 }
 
-.custom-select-lg {
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: red;
-    color: #fff;
+h1 {
+    color: red;
 }
 
-.btn-dark {
-    background-color: red;
-    color: #fff;
+
+.icons a:hover {
+    color: red;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #000;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #000;
+}
 
 
 /*----------------------style contact section---------------*/
@@ -548,31 +542,50 @@ form {
     background-position: center;
     filter: brightness(80%);
 }
+/*--------------------------- footer section start ----------------------------*/
+.container{
+	max-width: 1150px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+}
+.footer-col{
+   width: 30%;
+   margin-bottom: auto;
+
+}
+.footer-col h1{
+	font-size: 30px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h1::before{
+	content: '';
+	position: absolute;
+	left: 50px;
+	bottom: 10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 10px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
 }
 
-.navbar {
-    background-color: #333;
-    overflow: hidden;
-}
-
-
-.box {
-    padding: 20px;
-}
-
-h1 {
-    color: red;
-}
-
-
-.icons a:hover {
-    color: red;
-}
 /*-------------------------------------- style copyright area ------------------------*/
 .copyright{
     text-transform: capitalize;
@@ -595,15 +608,22 @@ td{
 }
 /*-------------------------------------- make responsive ----------------------*/
 
-@media screen and (max-width: 900px){
-    .navbar{
+/* Original styles for larger screens */
+
+/* ... Your existing CSS ... */
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    .navbar {
         padding: 0 60px;
     }
-    .navbar ol{
+
+    .navbar ol {
         display: none;
     }
+
     .navbar ol.active{
-        top: 60px;
+        top: 30px;
         left: 0;
         width: 100%;
         display: flex;
@@ -612,136 +632,217 @@ td{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        height: calc(100%-60px);
+        height: calc(100% - 60px);
     }
     .navbar ol.active li{
         margin: 8px;
     }
+
     .navbar ol.active li a{
-        font-size: 25px;
+        font-size: 30px;
     }
-    .navbar .toggle{
+
+    .navbar .toggle {
         height: 25px;
         width: 25px;
         margin: auto 0;
         cursor: pointer;
         background: url(menubar.jpg);
-        background-size: cover;
+        background-size: 40px;
         background-position: center;
         filter: invert(1);
         background-repeat: no-repeat;
     }
+
     .navbar .toggle .active{
-        background: url(close);
+        background: url(close); 
         background-size: 40px;
         background-position: center;
         cursor: pointer;
-        filter: invert(1);
+        filter: invert(1);       
     }
-    .highlights h3{
-        font-size: 3vw;
-        padding: 5px 10px;
-        border-left: 3px solid red;
-    }
+
     .highlights h1{
-        font-size: 16vw;
+        font-size: 7vw;
     }
-    .highlights .join{
-        font-size: 1.8vw;
-        border: 1px solid red;
+
+    .highlights h3 {
+        font-size: 5vw;
+        border-left: 3px solid red !important;
     }
-    .main h2{
-        font-size: 1.5rem;
+
+    .highlights .tagline,
+    .highlights .join {
+        font-size: 2vw;
     }
-    .main h6{
+
+    .main h2 {
+        font-size: 6vw;
+        padding-top: 50px;
+    }
+
+    .main h2::before {
+        width: 50%;
+    }
+
+    .main h6 {
         font-size: 10px;
     }
-    .about .content{
+
+    .about .content {
         flex-direction: column;
     }
-    .workout .content .frame{
-        width: 260px;
-        padding: 18px;
+    
+    .about .content .cols{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 10px 20px;
     }
-    .trainers .content .frame{
-            width: 350px;
-            padding: 15px 15px 40px 15px;
-            margin: 10px 5px;
+
+    .about .content .cols .box {
+        height: 350px;
+        width: 100%;
     }
-    .trainers .content .frame .box{
-        height: 200px;
+
+    .about .content .cols .box img {
+        height: 100%;
+        width: 100%;
     }
-    .trainers .content .frame a{
-        border: 1.5px solid red;
-        padding: 3px 15px;
+
+    .workout .content .frame {
+            width: 100%; /* Adjust width for smaller screens */
     }
+
+    .trainers .content .frame {
+            width: 100%; /* Adjust width for smaller screens */
+        }
+    
+    .trainers .content .frame .headline {
+            flex-direction: row; /* Adjusted for smaller screens */
+            justify-content: space-between; /* Adjusted for smaller screens */
+        }
+    
+    .trainers .content .frame .headline i {
+            margin-bottom: 0; /* Adjusted for smaller screens */
+    }
+
+    
+.trainers .content .frame .box{
+    position: relative;
+    height: 350px;
+    width: 320px;
+    overflow: hidden;
+}
+.trainers .content .frame .box img{
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: 0.2s ease-in;
+}
+
     .diet .content .row{
         flex-direction: column;
     }
-    .diet .content .row .cols{
-        width: 100%;
+
+    .diet .content .row .cols {
+        width: 100%; /* Adjust width for smaller screens */
     }
+
     .diet .content .row:nth-child(odd) .a{
         order: 0;
     }
-    .diet .content .row .cols .heading{
+
+    .diet .content .row .cols .headline{
         font-size: 1.5em;
     }
+
     .diet .content .row .cols p{
         font-size: 13px;
     }
-    .diet .content .row .cols.boxes{
+
+    .diet .content .row .cols .boxes{
         width: 90%;
         margin: auto;
     }
-    @media (max-width: 768px) {
-        table tr td {
-            display: block;
-            width: 100%;
-            box-sizing: border-box;
-        }
-    
-        table tr td .icons,
-        table tr td .box {
-            margin-top: 10px;
-        }
-    
-        table tr:last-child .icons {
-            margin-top: 20px;
-        }
-    }
-    @media (max-width: 768px) {
-        .contact {
-            flex-direction: column;
-        }
-    
-        .main {
-            order: 2; /* Move .main below .content in the source order */
-        }
-    
-        form {
-            width: 80%;
-        }
-    }
-    @media (max-width: 768px) {
-        .table-responsive {
-            overflow-x: auto;
-        }
-    
-        .nav-pills {
-            flex-wrap: wrap;
-        }
-    
-        .nav-pills .nav-item {
-            margin-right: 0;
-            margin-bottom: 5px;
-        }
-    
-        .form-control-lg,
-        .custom-select-lg,
-        .btn-dark {
-            margin-bottom: 15px;
-        }
+    .diet .content .row .cols .boxes img{
+        width: 90%;
+        margin: auto;
     }
 
+    .diet .content .row .cols .boxes {
+        height: auto; /* Make the box height automatic for smaller screens */
+    }
+
+
+    /* General styles for the timetable section */
+#timetable {
+    background-color: #000;
+    padding: 40px 0;
 }
+
+.container {
+    text-align: center;
+}
+
+h2 span{
+    color: red;
+    font-size: 1.5em;
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h5 {
+    color: #fff;
+}
+/* Styles for the tab navigation */
+.tab-class {
+    margin-bottom: 20px;
+}
+
+.nav-pills .nav-link {
+    color: red;
+}
+
+.nav-pills .nav-link.active {
+    background-color: red;
+    color: #fff;
+}
+
+/* Styles for the timetable table */
+.table-responsive {
+    margin-top: 20px;
+    overflow-x: auto; /* Allow horizontal scrolling */
+}
+
+.table-lg {
+    margin: 0 auto;
+}
+
+.table th, .table td {
+    background-color: lightseagreen;
+}
+
+.table-responsive {
+    overflow-x: scroll; /* Enable horizontal scrolling on smaller screens */
+}
+/*responsive*/
+.footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+  .footer-col{
+    width: 100%;
+}
+
+.footer-col h4{
+	font-size: 10px;
+}
+
+}
+
+
+/* You can continue adding more media queries for different screen sizes if necessary */

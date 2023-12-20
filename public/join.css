@@ -52,3 +52,20 @@ body {
     background-color: #000;
     color: #fff;
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    input[type="text"],
+    select {
+        width: calc(100% - 16px);
+    }
+
+    button {
+        width: 100%;
+    }
+}
