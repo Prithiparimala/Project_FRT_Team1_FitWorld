@@ -31,7 +31,7 @@ Nutrition Tracking: Achieving your fitness goals goes beyond exercise. Use our n
 5 azure services
 ## Technologies Used
 
- **Frontend:**
+- **Frontend:**
   html css js
 
 - **Backend:**
